@@ -1,5 +1,5 @@
 ---
-title: Move just the server
+title: Moving the server
 description: Walkthrough outlining how you can move an Octopus instance from one server to another.
 position: 1
 ---
