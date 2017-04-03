@@ -11,7 +11,7 @@ You may want to move only the server itself, and continue using your existing da
 
 ![master key](/docs/images/3048440/5865780.png "width=500")
 
-- Data that is stored in the file system needs moving over to the new server. These are your Packages stored in the built-in package repository, your artifacts, and your Task Logs.
+- Data that is stored in the file system needs to be moved over to the new server. These are your Packages stored in the built-in package repository, your artifacts, and your Task Logs.
 - Tentacle thumbprints are stored in the database. If you’re using the same database, you won’t need to re-configure your Tentacles.
 - [Remote connections](https://msdn.microsoft.com/en-us/library/ms191464.aspx) need to be enabled and configured in SQL server if applicable.  
 
@@ -22,15 +22,16 @@ If you are following this guide to move your instance to an upgraded Octopus ver
 ### Process
 
 1. On your new server, [download and install the MSI](https://octopus.com/downloads).
+
 2. Connect to your existing database in your Octopus Manager using your master key.
 
 3. After your existing database is connected to your new Octopus installation, copy the following directories to your new server (the paths listed are default installation directories):
    - Packages (C:\Octopus\Packages)
-   This folder only needs to be moved if using the built-in package repository. External feed details are stored in the database, so they will connect automatically.
+   This folder only needs to be moved if using the built-in package repository. External feed details are stored in the database, and they will connect automatically.
    - Artifacts (C:\Octopus\Artifacts)
    - Task Logs (C:\Octopus\TaskLogs)
 
-If you copied the packages folder containing the packages in your built-in repository, you will need to restart your new Octopus Server to index these packages. You can restart in your Octopus Manager, or via the command line with the following command.
+If you copied the packages folder, you will need to restart your new Octopus instance to index the packages. You can restart either in your Octopus Manager, or via the command line with the following command.
 ```
 Octopus.Server.exe service --stop
 Octopus.Server.exe service --start
