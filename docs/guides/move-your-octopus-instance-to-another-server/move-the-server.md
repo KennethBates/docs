@@ -1,6 +1,6 @@
 ---
 title: Move just the server
-description: Walkthrough to move an Octopus instance from one server to another.
+description: Walkthrough outlining how you can move an Octopus instance from one server to another.
 position: 1
 ---
 
