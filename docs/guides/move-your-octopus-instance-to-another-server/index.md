@@ -1,6 +1,6 @@
 ---
-title: Administration
-description: Octopus administration tasks and command reference.
+title: Moving your Octopus instance to another server
+description: Moving Octopus instance reference and guides.
 position: 13
 hideInThisSectionHeader: true
 ---
