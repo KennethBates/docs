@@ -17,3 +17,8 @@ Maintenance Mode does not prevent Tentacle connections. Health checks and other 
 :::
 
 This cannot be done simultaneously with Disaster Recovery scenarios. That would require a separate instance. DR requires connection to the same database and keeping the instance offline. Refer to our guide on Disaster Recovery <link when available>
+
+- [Moving the database](/docs/move-the-database.md)
+- [Moving the server](/docs/move-the-server.md)
+- [Moving the database and server](/docs/move-the-database-and-server.md)
+- [Moving the home directory](/docs/getting-started.md)
