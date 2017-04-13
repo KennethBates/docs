@@ -39,3 +39,8 @@ Octopus.Server.exe service --start
 :::info
 Octopus 2.6 and older, built-in repository packages were stored in the directory C:\Octopus\OctopusServer\Repository\Packages. If upgrading, you will need to copy the Packages folder to the C:\Octopus\Packages directory.
 :::
+
+- [Moving the database](/docs/move-the-database.md)
+- [Moving the database and server](/docs/move-the-database-and-server.md)
+- [Moving the home directory](/docs/getting-started.md)
+- [Replicating your Octopus instance in a test environment](/docs/replicating-your-octopus-instance-in-a-test-environment.md)
