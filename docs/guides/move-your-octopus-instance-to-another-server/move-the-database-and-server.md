@@ -13,10 +13,10 @@ Move Database:
 5. Create a new Octopus instance using the same Octopus version as your original instance. You can find an older version and download the MSI in our [previous releases](https://octopus.com/downloads/previous) page.
 6. During the installation of your new instance, select the database you restored. It will prompt for the master key.
 7. Copy the following directories from your original server to the new server (each of these folders are located in C:\Octopus in standard installations).
-   - \Packages\
-   This folder only needs to be moved if using the built-in package repository. External feed details are stored in the database, and they will connect automatically.
-   - \Artifacts\
-   - \Task Logs\
+   - Packages
+   - This folder only needs to be moved if using the built-in package repository. External feed details are stored in the database, and they will connect automatically.
+   - Artifacts
+   - Task Logs
 8. Restart your new Octopus instance to index the packages. You can restart either in your Octopus Manager, or via the command line with the following command.
 ```
 Octopus.Server.exe service --stop
