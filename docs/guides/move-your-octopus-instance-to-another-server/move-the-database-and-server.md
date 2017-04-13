@@ -21,3 +21,8 @@ Octopus.Server.exe service --start
 ```
 
 The database stores the locations for these directories. After you connect to the database, your settings will be the same as they were in your original server. You can change the locations for these directories, but we recommend first moving the directories themselves, and then updating the location setting in which they are looked for.
+
+- [Moving the database](/docs/move-the-database.md)
+- [Moving the server](/docs/move-the-server.md)
+- [Moving the home directory](/docs/getting-started.md)
+- [Replicating your Octopus instance in a test environment](/docs/replicating-your-octopus-instance-in-a-test-environment.md)
