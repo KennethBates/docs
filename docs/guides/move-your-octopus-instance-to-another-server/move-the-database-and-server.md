@@ -17,7 +17,7 @@ Move Database:
    - Task Logs
    - Packages
       - This folder only needs to be moved if using the built-in package repository. External feed details are stored in the database, and they will connect automatically.
-8. Restart your new Octopus instance to index the packages. You can restart either in your Octopus Manager, or via the command line with the following command.
+8. Finally, restart your new Octopus instance to index the packages. You can restart either in your Octopus Manager, or via the command line with the following command.
 ```
 Octopus.Server.exe service --stop
 Octopus.Server.exe service --start
