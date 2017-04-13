@@ -13,6 +13,7 @@ This page outlines our recommended steps to move your SQL database to another se
 3. Take a backup of your Octopus database.
 4. Restore the database on your new server.
 5. On your original Octopus server, run the following command to update the connection string (where "VALUE" is your connection string, which will look something like `Data Source=MyServerAddress\SQLEXPRESS;Initial Catalog=OctopusDatabase;Integrated Security=True`).
+
 Octopus.Server.exe configure --storageConnectionString="VALUE"
 
 :::hint
