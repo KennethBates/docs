@@ -22,11 +22,11 @@ If you are following this guide to move your instance to an upgraded Octopus ver
 
 2. Connect to your existing database in your Octopus Manager using your master key.
 
-3. After your existing database is connected to your new Octopus installation, copy the following directories to your new server (the paths listed are default installation directories):
-   - Packages (C:\Octopus\Packages)
-   This folder only needs to be moved if using the built-in package repository. External feed details are stored in the database, and they will connect automatically.
-   - Artifacts (C:\Octopus\Artifacts)
-   - Task Logs (C:\Octopus\TaskLogs)
+3. After your existing database is connected to your new Octopus installation, copy the following directories to your new server (each of these folders are located in C:\Octopus in standard installations).
+   - Artifacts
+   - Task Logs
+   - Packages
+      - This folder only needs to be moved if using the built-in package repository. External feed details are stored in the database, and they will connect automatically.
 
 If you copied the packages folder, you will need to restart your new Octopus instance to index the packages. You can restart either in your Octopus Manager, or via the command line with the following command.
 ```
