@@ -11,7 +11,6 @@ You may want to move only the server itself, and continue using your existing da
 
 - Data that is stored in the file system needs to be moved over to the new server. These are your Packages stored in the built-in package repository, your artifacts, and your Task Logs. Instructions on doing this are outlined in the next section.
 - Tentacle thumbprints are stored in the database. If you’re using the same database, you won’t need to re-configure your Tentacles.
-- [Remote connections](https://msdn.microsoft.com/en-us/library/ms191464.aspx) need to be enabled and configured in SQL server if applicable.  
 
 :::warning
 If you are following this guide to move your instance to an upgraded Octopus version, there are important aspects to consider depending on which version you’re upgrading from. Refer to our [upgrading guides](https://octopus.com/docs/administration/upgrading) for applicable information for your scenario.
