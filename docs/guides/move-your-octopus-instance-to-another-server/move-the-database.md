@@ -12,7 +12,8 @@ This page outlines our recommended steps to move your SQL database to another se
 2. Ensure you have saved a copy of your [master key](https://octopus.com/docs/reference/security-and-encryption#Securityandencryption-YourMasterKey).
 3. Take a backup of your Octopus database.
 4. Restore the database on your new server.
-[Instead, need to outline connecting to the new database via connectionstring.]
+5. On your original Octopus server, run the following command to update the connection string (where "VALUE" is your connection string, which will look something like `Data Source=MyServerAddress\SQLEXPRESS;Initial Catalog=OctopusDatabase;Integrated Security=True`).
+Octopus.Server.exe configure --storageConnectionString="VALUE"
 
 :::hint
 When running the Octopus Deploy service as a Local System account, Windows Authentication can be used only if the SQL server instance is hosted on the same machine. To host SQL Server remotely, use SQL Server Authentication, or run the Octopus Deploy service as a custom account.
