@@ -19,3 +19,8 @@ Octopus.Server.exe configure --storageConnectionString="VALUE"
 :::hint
 When running the Octopus Deploy service as a Local System account, Windows Authentication can be used only if the SQL server instance is hosted on the same machine. To host SQL Server remotely, use SQL Server Authentication, or run the Octopus Deploy service as a custom account.
 :::
+
+- [Moving the server](/docs/move-the-server.md)
+- [Moving the database and server](/docs/move-the-database-and-server.md)
+- [Moving the home directory](/docs/getting-started.md)
+- [Replicating your Octopus instance in a test environment](/docs/replicating-your-octopus-instance-in-a-test-environment.md)
